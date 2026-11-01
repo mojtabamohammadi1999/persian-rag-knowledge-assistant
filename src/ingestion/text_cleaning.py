@@ -21,6 +21,16 @@ def clean_persian(text: str) -> str:
     return text
 
 
+def fix_split_keywords(text: str) -> str:
+    """PDF extraction sometimes splits 'ماده' into 'ما ده'; repair it when a number follows."""
+    return re.sub(r"ما\s+ده(?=\s*\d)", "ماده", text)
+
+
+def break_before_inline_headings(text: str) -> str:
+    """Start a new line before a 'ماده N -' heading that sits in the middle of a line."""
+    return re.sub(r"[ \t]+(ماده\s*\d+\s*-)", r"\n\1", text)
+
+
 def merge_lines(text: str) -> str:
     """Merge broken lines into paragraphs; new paragraph at ماده/تبصره/فصل/بند or '1 -'."""
     new_para = re.compile(r"^(ماده|تبصره|فصل|بند)\s*\d+|^\d+\s*-")

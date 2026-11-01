@@ -6,7 +6,13 @@ from pathlib import Path
 import pymupdf
 from bs4 import BeautifulSoup
 
-from src.ingestion.text_cleaning import clean_persian, merge_lines, remove_diacritics
+from src.ingestion.text_cleaning import (
+    break_before_inline_headings,
+    clean_persian,
+    fix_split_keywords,
+    merge_lines,
+    remove_diacritics,
+)
 
 TITLE = re.compile(r"^اصل\s")
 CHAPTER = re.compile(r"^فصل\s")
@@ -34,6 +40,8 @@ def process_pdf(path, top_cut=0, bottom_cut=9999):
     for i, page in enumerate(doc):
         text = extract_page_text(page, top_cut, bottom_cut)
         text = clean_persian(text)
+        text = fix_split_keywords(text)
+        text = break_before_inline_headings(text)
         text = merge_lines(text)
         pages.append({
             "document": Path(path).name,

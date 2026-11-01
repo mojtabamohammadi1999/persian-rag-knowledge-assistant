@@ -1,4 +1,5 @@
 """Document loaders for PDF and HTML files."""
+import re
 import unicodedata
 from pathlib import Path
 
@@ -6,6 +7,9 @@ import pymupdf
 from bs4 import BeautifulSoup
 
 from src.ingestion.text_cleaning import clean_persian, merge_lines, remove_diacritics
+
+TITLE = re.compile(r"^اصل\s")
+CHAPTER = re.compile(r"^فصل\s")
 
 
 def extract_page_text(page, top_cut=0, bottom_cut=9999):
@@ -39,6 +43,30 @@ def process_pdf(path, top_cut=0, bottom_cut=9999):
     return pages
 
 
+def drop_obsolete_blocks(lines):
+    """Drop the old text of amended principles ('اصل سابق') and editorial-note blocks.
+
+    A dropped block runs until the next principle title or chapter title.
+    """
+    kept = []
+    skipping = False
+    for i, l in enumerate(lines):
+        is_old = l.strip().startswith("اصل سابق")
+        is_note_title = (
+            TITLE.match(l) is not None
+            and i + 1 < len(lines)
+            and lines[i + 1].startswith("به موجب اصلاحاتی")
+        )
+        if is_old or is_note_title:
+            skipping = True
+            continue
+        if skipping and (TITLE.match(l) or CHAPTER.match(l)):
+            skipping = False
+        if not skipping:
+            kept.append(l)
+    return kept
+
+
 def load_html_text(path):
     """Read a saved Wikisource HTML file and return the cleaned main text."""
     with open(path, encoding="utf-8") as f:
@@ -55,4 +83,6 @@ def load_html_text(path):
     end = text.rfind("\nمنابع\n")
     if end != -1:
         text = text[:end]
+
+    text = "\n".join(drop_obsolete_blocks(text.split("\n")))
     return text

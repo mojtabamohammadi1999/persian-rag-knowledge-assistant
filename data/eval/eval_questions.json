@@ -1,0 +1,86 @@
+[
+  {
+    "id": "q01",
+    "gold_chunk": "sec-0024",
+    "question": "چه نهادهایی و در چه مهلتی باید دستورالعمل اجرایی آیین‌نامه انضباطی را تهیه کنند؟",
+    "evidence": "شیوه نامه اجرایی این آیین نامه",
+    "document": "discipline_regulation.pdf"
+  },
+  {
+    "id": "q02",
+    "gold_chunk": "sec-0005",
+    "question": "اگر عضو کمیته انضباطی دانشگاه چند جلسه پشت‌سرهم بدون عذر غایب باشد، چه اتفاقی می‌افتد؟",
+    "evidence": "سه جلسه متوالی",
+    "document": "discipline_regulation.pdf"
+  },
+  {
+    "id": "q03",
+    "gold_chunk": "sec-0002",
+    "question": "در آیین‌نامه انضباطی، «دانشجوی وابسته» به چه کسی گفته می‌شود؟",
+    "evidence": "دانشجوی وابسته: به فردی",
+    "document": "discipline_regulation.pdf"
+  },
+  {
+    "id": "q04",
+    "gold_chunk": "sec-0010",
+    "question": "آیا رعایت نکردن پوشش اسلامی در دانشگاه تخلف انضباطی محسوب می‌شود؟",
+    "evidence": "عدم رعایت پوشش اسلامی",
+    "document": "discipline_regulation.pdf"
+  },
+  {
+    "id": "q05",
+    "gold_chunk": "sec-0046",
+    "question": "چه کسی مسئول ارزیابی دانشجو در هر درس است؟",
+    "evidence": "مرجع ارزیابی دانشجو",
+    "document": "education_regulation.pdf"
+  },
+  {
+    "id": "q06",
+    "gold_chunk": "sec-0045",
+    "question": "اگر دانشجو در امتحان پایان ترم شرکت نکند، سرنوشت آن درس چه می‌شود؟",
+    "evidence": "در جلسه امتحان پایان نیمسال غیبت",
+    "document": "education_regulation.pdf"
+  },
+  {
+    "id": "q07",
+    "gold_chunk": "sec-0037",
+    "question": "اگر به دلیل موجه تعداد واحدهای دانشجو در پایان ترم از حداقل مجاز کمتر شود، آن ترم در سنوات چگونه حساب می‌شود؟",
+    "evidence": "نیمسال تحصیلی کامل در سنوات",
+    "document": "education_regulation.pdf"
+  },
+  {
+    "id": "q08",
+    "gold_chunk": "sec-0033",
+    "question": "طول هر ترم و دوره‌ی تابستانی چند هفته آموزش دارد؟",
+    "evidence": "شامل16 هفته آموزش",
+    "document": "education_regulation.pdf"
+  },
+  {
+    "id": "q09",
+    "gold_chunk": "sec-0258",
+    "question": "جرایم نظامی اعضای ارتش و سپاه در چه دادگاه‌هایی بررسی می‌شود؟",
+    "evidence": "محاکم نظامی مطابق قانون",
+    "document": "constitution.html"
+  },
+  {
+    "id": "q10",
+    "gold_chunk": "sec-0110",
+    "question": "آیا هر شهروند حق انتخاب شغل دارد و دولت در این زمینه چه وظیفه‌ای دارد؟",
+    "evidence": "هر کس حق دارد شغلی",
+    "document": "constitution.html"
+  },
+  {
+    "id": "q11",
+    "gold_chunk": "sec-0218",
+    "question": "وقتی معاون اول اختیارات رئیس‌جمهور را بر عهده دارد، چه کارهایی انجام نمی‌شود؟",
+    "evidence": "استیضاح کرد",
+    "document": "constitution.html"
+  },
+  {
+    "id": "q12",
+    "gold_chunk": "sec-0090",
+    "question": "امر به معروف و نهی از منکر وظیفه‌ی چه کسانی است؟",
+    "evidence": "همگانی و متقابل",
+    "document": "constitution.html"
+  }
+]

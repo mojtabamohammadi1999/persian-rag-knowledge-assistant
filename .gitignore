@@ -10,3 +10,6 @@ data/raw/*
 data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+
+# Notebooks (kept out of the repo)
+*.ipynb

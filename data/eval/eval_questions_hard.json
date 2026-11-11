@@ -1,0 +1,247 @@
+[
+  {
+    "id": "q01",
+    "gold_chunk": "sec-0024",
+    "question": "چه کسانی باید ظرف چه مدتی شیوه‌نامه‌ی اجرای مقررات رسیدگی به تخلفات دانشجویان را آماده کنند؟",
+    "evidence": "شیوه نامه اجرایی این آیین نامه",
+    "document": "discipline_regulation.pdf"
+  },
+  {
+    "id": "q02",
+    "gold_chunk": "sec-0005",
+    "question": "اگر یکی از اعضای هیئت رسیدگی به تخلفات دانشگاه بارها بدون دلیل در نشست‌ها حاضر نشود، چه می‌شود؟",
+    "evidence": "سه جلسه متوالی",
+    "document": "discipline_regulation.pdf"
+  },
+  {
+    "id": "q03",
+    "gold_chunk": "sec-0002",
+    "question": "اصطلاح «وابسته» برای دانشجو در مقررات رفتاری دانشگاه به چه معناست؟",
+    "evidence": "دانشجوی وابسته: به فردی",
+    "document": "discipline_regulation.pdf"
+  },
+  {
+    "id": "q04",
+    "gold_chunk": "sec-0010",
+    "question": "اگر دانشجو حجاب و پوشش مناسب را رعایت نکند، دانشگاه می‌تواند با او برخورد انضباطی کند؟",
+    "evidence": "عدم رعایت پوشش اسلامی",
+    "document": "discipline_regulation.pdf"
+  },
+  {
+    "id": "q05",
+    "gold_chunk": "sec-0046",
+    "question": "نمره‌ی دانشجو در یک درس را چه کسی تعیین می‌کند؟",
+    "evidence": "مرجع ارزیابی دانشجو",
+    "document": "education_regulation.pdf"
+  },
+  {
+    "id": "q06",
+    "gold_chunk": "sec-0045",
+    "question": "اگر دانشجو در آزمون آخر نیمسال حاضر نشود، تکلیف آن درس چیست؟",
+    "evidence": "در جلسه امتحان پایان نیمسال غیبت",
+    "document": "education_regulation.pdf"
+  },
+  {
+    "id": "q07",
+    "gold_chunk": "sec-0037",
+    "question": "اگر دانشجو با عذر قابل قبول در پایان نیمسال واحد کمتر از حد نصاب داشته باشد، آن نیمسال از نظر مدت مجاز تحصیل چه حکمی دارد؟",
+    "evidence": "نیمسال تحصیلی کامل در سنوات",
+    "document": "education_regulation.pdf"
+  },
+  {
+    "id": "q08",
+    "gold_chunk": "sec-0033",
+    "question": "هر نیمسال و دوره‌ی تابستان چند هفته کلاس دارد؟",
+    "evidence": "شامل16 هفته آموزش",
+    "document": "education_regulation.pdf"
+  },
+  {
+    "id": "q09",
+    "gold_chunk": "sec-0258",
+    "question": "تخلفات مربوط به وظایف نظامی نیروهای مسلح را کدام محاکم بررسی می‌کنند؟",
+    "evidence": "محاکم نظامی مطابق قانون",
+    "document": "constitution.html"
+  },
+  {
+    "id": "q10",
+    "gold_chunk": "sec-0110",
+    "question": "آیا هر فرد می‌تواند شغل دلخواهش را برگزیند و حکومت در این باره چه مسئولیتی دارد؟",
+    "evidence": "هر کس حق دارد شغلی",
+    "document": "constitution.html"
+  },
+  {
+    "id": "q11",
+    "gold_chunk": "sec-0218",
+    "question": "وقتی نخستین معاون رئیس‌جمهور مسئولیت‌های او را بر عهده می‌گیرد، چه اقداماتی ممکن نیست؟",
+    "evidence": "استیضاح کرد",
+    "document": "constitution.html"
+  },
+  {
+    "id": "q12",
+    "gold_chunk": "sec-0090",
+    "question": "دعوت به نیکی و بازداشتن از بدی بر عهده‌ی کیست؟",
+    "evidence": "همگانی و متقابل",
+    "document": "constitution.html"
+  },
+  {
+    "id": "q13",
+    "gold_chunk": "sec-0015",
+    "question": "آیا کمیته می‌تواند اجرای مجازات را موقتاً متوقف کند و در چه صورتی؟",
+    "evidence": "به حالت تعلیق درآورند",
+    "document": "discipline_regulation.pdf"
+  },
+  {
+    "id": "q14",
+    "gold_chunk": "sec-0008",
+    "question": "حداقل چند نفر باید حاضر باشند تا نشست کمیته‌ی مرکزی رسیدگی به تخلفات معتبر باشد؟",
+    "evidence": "با حضور4 نفر رسمیت می یابد",
+    "document": "discipline_regulation.pdf"
+  },
+  {
+    "id": "q15",
+    "gold_chunk": "sec-0017",
+    "question": "مهلت درخواست بازبینی رأی صادرشده در دانشگاه برای دانشجو چند روز است؟",
+    "evidence": "ظرف مدت 10 روز اداری",
+    "document": "discipline_regulation.pdf"
+  },
+  {
+    "id": "q17",
+    "gold_chunk": "sec-0003",
+    "question": "چه رفتارهایی برای دانشجو در طول تحصیل، داخل و خارج از محیط دانشگاه، ممنوع است؟",
+    "evidence": "خلاف شئون و حیثیات دانشجو",
+    "document": "discipline_regulation.pdf"
+  },
+  {
+    "id": "q18",
+    "gold_chunk": "sec-0004",
+    "question": "چه کسی کمیته‌ی بدوی رسیدگی به تخلفات را در دانشگاه اداره می‌کند؟",
+    "evidence": "معاون دانشجویی دانشگاه به عنوان رییس کمیته انضباطی بدوی",
+    "document": "discipline_regulation.pdf"
+  },
+  {
+    "id": "q19",
+    "gold_chunk": "sec-0013",
+    "question": "تا چه مدت می‌توان دانشجوی دارای پرونده‌ی تخلف را تا زمان بررسی از ورود به دانشگاه منع کرد؟",
+    "evidence": "تا مدت دو ماه جلوگیری کند",
+    "document": "discipline_regulation.pdf"
+  },
+  {
+    "id": "q20",
+    "gold_chunk": "sec-0022",
+    "question": "اگر دادگاه یا دستگاه‌های امنیتی درباره‌ی دانشجویی نظر بدهند، چه کسی درباره‌ی ادامه‌ی تحصیل او تصمیم می‌گیرد؟",
+    "evidence": "مرجع تشخیص صلاحیت یا عدم صلاحیت",
+    "document": "discipline_regulation.pdf"
+  },
+  {
+    "id": "q21",
+    "gold_chunk": "sec-0042",
+    "question": "تصمیم درباره‌ی کم‌وزیاد کردن واحدها در ابتدای ترم و کنار گذاشتن درس در شرایط ویژه با کدام مرجع است؟",
+    "evidence": "بر عهده شورای آموزشی مؤسسه است",
+    "document": "education_regulation.pdf"
+  },
+  {
+    "id": "q22",
+    "gold_chunk": "sec-0053",
+    "question": "اگر دانشجوی بدون شهریه درسی را قبول نشده باشد و بخواهد دوباره بگیرد، چه مبلغی باید بپردازد؟",
+    "evidence": "موظف به پرداخت هزینه مربوط مطابق تعرفه مصوب",
+    "document": "education_regulation.pdf"
+  },
+  {
+    "id": "q23",
+    "gold_chunk": "sec-0028",
+    "question": "واژه‌ی «مؤسسه» در مقررات آموزشی دوره‌ی لیسانس یعنی چه؟",
+    "evidence": "منظور کلیه دانشگاهها و موسسات آموزش عالی",
+    "document": "education_regulation.pdf"
+  },
+  {
+    "id": "q24",
+    "gold_chunk": "sec-0051",
+    "question": "دانشجوی لیسانس غیرپیوسته حداکثر چند ترم اجازه دارد با معدل زیر حد مجاز بماند؟",
+    "evidence": "حداکثر نیمسال های مشروطی مجاز",
+    "document": "education_regulation.pdf"
+  },
+  {
+    "id": "q25",
+    "gold_chunk": "sec-0036",
+    "question": "هر دانشجو در یک نیمسال معمولی حداقل و حداکثر چند واحد می‌تواند انتخاب کند؟",
+    "evidence": "حداقل14 و حداکثر20 واحد درسی",
+    "document": "education_regulation.pdf"
+  },
+  {
+    "id": "q26",
+    "gold_chunk": "sec-0063",
+    "question": "دانشجوی لیسانس پیوسته که تحصیل را رها می‌کند چه زمانی می‌تواند فوق‌دیپلم بگیرد؟",
+    "evidence": "می تواند مدرک کاردانی در همان رشته دریافت کند",
+    "document": "education_regulation.pdf"
+  },
+  {
+    "id": "q27",
+    "gold_chunk": "sec-0029",
+    "question": "کسی که دانشجو را در برنامه‌ریزی تحصیلی هدایت می‌کند در مقررات آموزشی چه کسی است؟",
+    "evidence": "عضو هیئت علمی آگاه و مسلط به امور آموزشی",
+    "document": "education_regulation.pdf"
+  },
+  {
+    "id": "q28",
+    "gold_chunk": "sec-0048",
+    "question": "نمره‌ی موقت یک درس چند روز پس از اتمام آزمون‌ها باید نهایی شود؟",
+    "evidence": "حداکثر ظرف مدت چهل و پنج",
+    "document": "education_regulation.pdf"
+  },
+  {
+    "id": "q29",
+    "gold_chunk": "sec-0220",
+    "question": "چه کسی رئیس کابینه است و چه مسئولیتی دارد؟",
+    "evidence": "ریاست هیئت وزیران با",
+    "document": "constitution.html"
+  },
+  {
+    "id": "q30",
+    "gold_chunk": "sec-0102",
+    "question": "آیا قانون از مردان و زنان به یک اندازه حمایت می‌کند؟",
+    "evidence": "همه افراد ملت اعم از زن و مرد یکسان در حمایت قانون",
+    "document": "constitution.html"
+  },
+  {
+    "id": "q31",
+    "gold_chunk": "sec-0166",
+    "question": "در چه شرایطی می‌توان دارایی‌های عمومی با ارزش تاریخی و ملی را به دیگری واگذار کرد؟",
+    "evidence": "قابل انتقال به غیر نیست مگر با تصویب مجلس",
+    "document": "constitution.html"
+  },
+  {
+    "id": "q32",
+    "gold_chunk": "sec-0113",
+    "question": "حکومت در قبال تأمین خانه برای مردم چه تعهدی دارد؟",
+    "evidence": "داشتن مسکن متناسب با نیاز، حق هر فرد و خانواده ایرانی است",
+    "document": "constitution.html"
+  },
+  {
+    "id": "q33",
+    "gold_chunk": "sec-0264",
+    "question": "تجدیدنظر در قانون اساسی با چه روشی و توسط چه کسانی انجام می‌شود؟",
+    "evidence": "بازنگری در قانون اساسی جمهوری اسلامی ایران",
+    "document": "constitution.html"
+  },
+  {
+    "id": "q34",
+    "gold_chunk": "sec-0221",
+    "question": "وزیران تا کی در پست خود می‌مانند؟",
+    "evidence": "در سمت خود باقی",
+    "document": "constitution.html"
+  },
+  {
+    "id": "q35",
+    "gold_chunk": "sec-0098",
+    "question": "آموزش زبان عربی طبق قانون اساسی تا چه پایه‌ای اجباری است؟",
+    "evidence": "پس از دوره ابتدایی تا پایان دوره متوسطه",
+    "document": "constitution.html"
+  },
+  {
+    "id": "q36",
+    "gold_chunk": "sec-0125",
+    "question": "چه نیازهایی را اقتصاد کشور باید برای تمام مردم فراهم کند؟",
+    "evidence": "مسکن، خوراک، پوشاک، بهداشت، درمان",
+    "document": "constitution.html"
+  }
+]

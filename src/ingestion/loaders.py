@@ -11,6 +11,7 @@ from src.ingestion.text_cleaning import (
     clean_persian,
     fix_split_keywords,
     merge_lines,
+    fix_reversed_numbers,
     remove_diacritics,
 )
 
@@ -43,6 +44,7 @@ def process_pdf(path, top_cut=0, bottom_cut=9999):
         text = fix_split_keywords(text)
         text = break_before_inline_headings(text)
         text = merge_lines(text)
+        text = fix_reversed_numbers(text)
         pages.append({
             "document": Path(path).name,
             "page": i + 1,

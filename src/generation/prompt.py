@@ -1,3 +1,5 @@
+import re
+
 NO_ANSWER = "اطلاعات کافی برای پاسخ به این سؤال در اسناد موجود نیست."
 
 DOC_TITLES = {
@@ -14,6 +16,15 @@ SYSTEM_PROMPT = f"""شما دستیار پاسخ‌گویی به سؤال‌ها
 4. اگر پاسخ در متن‌های مرجع نیست، فقط همین جمله را بنویس: «{NO_ANSWER}»"""
 
 
+def prepare_for_llm(text):
+    # بین حرف و رقم فاصله بگذار (ناپیوسته2.5 ← ناپیوسته 2.5)
+    text = re.sub(r"(?<=[^\W\d])(?=\d)", " ", text)
+    text = re.sub(r"(?<=\d)(?=[^\W\d])", " ", text)
+    # پرانتز برعکس عددی: 5)پنج (سال ← 5 (پنج) سال
+    text = re.sub(r"(\d)\)([^\s()]+) \(", r"\1 (\2) ", text)
+    return text
+
+
 def format_source(index, chunk):
     parts = [DOC_TITLES.get(chunk["document"], chunk["document"])]
     if chunk.get("label"):
@@ -25,7 +36,7 @@ def format_source(index, chunk):
 
 def build_messages(question, chunks):
     blocks = [
-        f"{format_source(i, c)}\n{c['text']}"
+        f"{format_source(i, c)}\n{prepare_for_llm(c['text'])}"
         for i, c in enumerate(chunks, start=1)
     ]
     context = "\n\n".join(blocks)

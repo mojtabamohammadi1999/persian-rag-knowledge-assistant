@@ -69,3 +69,11 @@ def merge_lines(text: str) -> str:
     result = re.sub(r"\s+([:.،؛])", r"\1", result)
     result = split_lettered_items(result)
     return result
+
+
+def fix_reversed_numbers(text):
+    # اعشار برعکس‌شده‌ی مدت: «5/2 سال» ← «2.5 سال»
+    text = re.sub(r"(?<!\d)(\d)/(\d)(?=\s*سال)", r"\2.\1", text)
+    # تاریخ برعکس‌شده: «8/5/ 91» ← «91/5/8»
+    text = re.sub(r"(?<!\d)(\d{1,2})/(\d{1,2})/\s*(\d{2,4})(?!\d)", r"\3/\2/\1", text)
+    return text

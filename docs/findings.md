@@ -1,0 +1,27 @@
+# Findings log (work in progress)
+
+## Ingestion
+- Persian PDF extraction problems: presentation-form letters (fixed with NFKC), split tokens ("ما ده" instead of "ماده"), headers/footers (cut by block coordinates), invisible RTL marks.
+- Digits reversed in decimals and dates: "5/2 سال" is actually 2.5 years, "8/5/ 91" is the date 91/5/8. Fixed with two narrow regex rules (a blanket swap would corrupt dates).
+- constitution.pdf has a broken font; the text was taken from a Wikisource HTML page instead.
+
+## Chunking and retrieval (12-question dev set, section-aware vs fixed-size)
+- Section-aware: Hit@1 0.83, MRR 0.858. Fixed-size (500 chars, 80 overlap): Hit@1 0.75, MRR 0.796. Difference is one question; too small to conclude.
+- BGE-M3 vs multilingual-e5-large: tie within noise. Kept BGE-M3 (8192-token context, no prefixes).
+- Failure class: a single item inside a long list chunk (definitions in article 1, violations in article 6): rank 8 and 6 before reranking.
+- Prepending the chapter title to the embedded text moved article 109 from rank 13 to 6 on one question (anecdotal, to be tested on the full set).
+
+## Reranking
+- bge-reranker-v2-m3 over a pool of 20 candidates: all 12 dev questions at rank 1 (the dev set was written from the chunks, so it is easy).
+- Hard example (conditions of the Leader): article 109 went from rank 13 to 5. With top_n=4 it would be dropped before reaching the LLM.
+
+## Generation (Qwen2.5-7B-Instruct, 4-bit, greedy, T4)
+- Latency: retrieval 0.04 s, rerank 0.2 s, generation 12-32 s.
+- Digits glued to words ("ناپیوسته2.5") and reversed parentheses made the model answer 5 years instead of 2.5. Fixed by normalizing text at prompt time.
+- Leader question: the model mixed the conditions of the President (article 115) into the Leader's, cited the wrong source number for one item and ignored the last source.
+- Cheating question (multi-hop: violation in article 6, penalties in article 7): the model listed one penalty out of five and invented the reference "article 1 item 7". The heading of the penalty list is separated from its items by a chunk boundary.
+
+## Ideas to test
+- Larger max_chars for section chunks; chapter/section title in reranker input.
+- Prompt rules: list all options, take article numbers only from the source header.
+- Confidence threshold on the reranker score (relevant answers can score as low as 0.375).

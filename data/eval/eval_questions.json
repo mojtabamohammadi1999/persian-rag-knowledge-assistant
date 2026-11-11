@@ -82,5 +82,173 @@
     "question": "امر به معروف و نهی از منکر وظیفه‌ی چه کسانی است؟",
     "evidence": "همگانی و متقابل",
     "document": "constitution.html"
+  },
+  {
+    "id": "q13",
+    "gold_chunk": "sec-0015",
+    "question": "آیا کمیته انضباطی می‌تواند اجرای حکم را به حالت تعلیق دربیاورد؟ تحت چه شرطی؟",
+    "evidence": "به حالت تعلیق درآورند",
+    "document": "discipline_regulation.pdf"
+  },
+  {
+    "id": "q14",
+    "gold_chunk": "sec-0008",
+    "question": "جلسه‌ی کمیته مرکزی انضباطی با حضور چند نفر رسمیت پیدا می‌کند؟",
+    "evidence": "با حضور4 نفر رسمیت می یابد",
+    "document": "discipline_regulation.pdf"
+  },
+  {
+    "id": "q15",
+    "gold_chunk": "sec-0017",
+    "question": "دانشجو چند روز فرصت دارد به حکم کمیته انضباطی دانشگاه اعتراض کند؟",
+    "evidence": "ظرف مدت 10 روز اداری",
+    "document": "discipline_regulation.pdf"
+  },
+  {
+    "id": "q16",
+    "gold_chunk": "sec-0025",
+    "question": "آیین‌نامه انضباطی از چند ماده، بند و تبصره تشکیل شده است؟",
+    "evidence": "14 ماده و54 بند و30 تبصره",
+    "document": "discipline_regulation.pdf"
+  },
+  {
+    "id": "q17",
+    "gold_chunk": "sec-0003",
+    "question": "دانشجو در دوران تحصیل، چه در دانشگاه و چه بیرون از آن، باید از چه کارهایی خودداری کند؟",
+    "evidence": "خلاف شئون و حیثیات دانشجو",
+    "document": "discipline_regulation.pdf"
+  },
+  {
+    "id": "q18",
+    "gold_chunk": "sec-0004",
+    "question": "ریاست کمیته انضباطی بدوی دانشگاه بر عهده‌ی کیست؟",
+    "evidence": "معاون دانشجویی دانشگاه به عنوان رییس کمیته انضباطی بدوی",
+    "document": "discipline_regulation.pdf"
+  },
+  {
+    "id": "q19",
+    "gold_chunk": "sec-0013",
+    "question": "رئیس دانشگاه تا چه مدت می‌تواند هنگام رسیدگی به پرونده، مانع ورود دانشجوی متخلف شود؟",
+    "evidence": "تا مدت دو ماه جلوگیری کند",
+    "document": "discipline_regulation.pdf"
+  },
+  {
+    "id": "q20",
+    "gold_chunk": "sec-0022",
+    "question": "اگر مراجع قضایی یا امنیتی درباره‌ی دانشجویی اعلام نظر کنند، تصمیم نهایی درباره‌ی ادامه‌ی تحصیل او با کیست؟",
+    "evidence": "مرجع تشخیص صلاحیت یا عدم صلاحیت",
+    "document": "discipline_regulation.pdf"
+  },
+  {
+    "id": "q21",
+    "gold_chunk": "sec-0042",
+    "question": "چه نهادی درباره‌ی حذف و اضافه و حذف اضطراری دروس تصمیم می‌گیرد؟",
+    "evidence": "بر عهده شورای آموزشی مؤسسه است",
+    "document": "education_regulation.pdf"
+  },
+  {
+    "id": "q22",
+    "gold_chunk": "sec-0053",
+    "question": "دانشجوی تحصیل رایگان که درسی را نیاورده، برای برداشتن دوباره‌ی آن درس چه هزینه‌ای می‌دهد؟",
+    "evidence": "موظف به پرداخت هزینه مربوط مطابق تعرفه مصوب",
+    "document": "education_regulation.pdf"
+  },
+  {
+    "id": "q23",
+    "gold_chunk": "sec-0028",
+    "question": "در آیین‌نامه آموزشی منظور از «مؤسسه» چیست؟",
+    "evidence": "منظور کلیه دانشگاهها و موسسات آموزش عالی",
+    "document": "education_regulation.pdf"
+  },
+  {
+    "id": "q24",
+    "gold_chunk": "sec-0051",
+    "question": "دانشجوی کارشناسی ناپیوسته حداکثر در چند نیمسال می‌تواند مشروط شود؟",
+    "evidence": "حداکثر نیمسال های مشروطی مجاز",
+    "document": "education_regulation.pdf"
+  },
+  {
+    "id": "q25",
+    "gold_chunk": "sec-0036",
+    "question": "تعداد واحدی که دانشجو در یک ترم عادی می‌تواند بردارد حداقل و حداکثر چقدر است؟",
+    "evidence": "حداقل14 و حداکثر20 واحد درسی",
+    "document": "education_regulation.pdf"
+  },
+  {
+    "id": "q26",
+    "gold_chunk": "sec-0063",
+    "question": "دانشجوی کارشناسی پیوسته که انصراف می‌دهد در چه شرایطی می‌تواند مدرک کاردانی بگیرد؟",
+    "evidence": "می تواند مدرک کاردانی در همان رشته دریافت کند",
+    "document": "education_regulation.pdf"
+  },
+  {
+    "id": "q27",
+    "gold_chunk": "sec-0029",
+    "question": "«راهنمای تحصیلی» در آیین‌نامه آموزشی به چه کسی گفته می‌شود؟",
+    "evidence": "عضو هیئت علمی آگاه و مسلط به امور آموزشی",
+    "document": "education_regulation.pdf"
+  },
+  {
+    "id": "q28",
+    "gold_chunk": "sec-0048",
+    "question": "نمره‌ی ناتمام یک درس تا چند روز بعد از پایان امتحانات باید قطعی شود؟",
+    "evidence": "حداکثر ظرف مدت چهل و پنج",
+    "document": "education_regulation.pdf"
+  },
+  {
+    "id": "q29",
+    "gold_chunk": "sec-0220",
+    "question": "ریاست هیئت وزیران با کیست و او چه وظیفه‌ای دارد؟",
+    "evidence": "ریاست هیئت وزیران با",
+    "document": "constitution.html"
+  },
+  {
+    "id": "q30",
+    "gold_chunk": "sec-0102",
+    "question": "آیا زن و مرد در برابر قانون از حمایت یکسان برخوردارند؟",
+    "evidence": "همه افراد ملت اعم از زن و مرد یکسان در حمایت قانون",
+    "document": "constitution.html"
+  },
+  {
+    "id": "q31",
+    "gold_chunk": "sec-0166",
+    "question": "انتقال اموال دولتی که جزو نفایس ملی است در چه صورتی ممکن است؟",
+    "evidence": "قابل انتقال به غیر نیست مگر با تصویب مجلس",
+    "document": "constitution.html"
+  },
+  {
+    "id": "q32",
+    "gold_chunk": "sec-0113",
+    "question": "طبق قانون اساسی دولت درباره‌ی مسکن چه وظیفه‌ای دارد؟",
+    "evidence": "داشتن مسکن متناسب با نیاز، حق هر فرد و خانواده ایرانی است",
+    "document": "constitution.html"
+  },
+  {
+    "id": "q33",
+    "gold_chunk": "sec-0264",
+    "question": "بازنگری در قانون اساسی چگونه و با چه ترکیبی از اعضا انجام می‌شود؟",
+    "evidence": "بازنگری در قانون اساسی جمهوری اسلامی ایران",
+    "document": "constitution.html"
+  },
+  {
+    "id": "q34",
+    "gold_chunk": "sec-0221",
+    "question": "وزیران تا چه زمانی در سمت خود باقی می‌مانند؟",
+    "evidence": "در سمت خود باقی",
+    "document": "constitution.html"
+  },
+  {
+    "id": "q35",
+    "gold_chunk": "sec-0098",
+    "question": "تدریس زبان عربی طبق قانون اساسی تا کدام مقطع تحصیلی الزامی است؟",
+    "evidence": "پس از دوره ابتدایی تا پایان دوره متوسطه",
+    "document": "constitution.html"
+  },
+  {
+    "id": "q36",
+    "gold_chunk": "sec-0125",
+    "question": "نیازهای اساسی که اقتصاد جمهوری اسلامی باید برای همه تأمین کند کدام‌اند؟",
+    "evidence": "مسکن، خوراک، پوشاک، بهداشت، درمان",
+    "document": "constitution.html"
   }
 ]

@@ -6,7 +6,7 @@ from src.retrieval.retriever import Retriever
 from src.retrieval.vector_store import get_client
 
 
-def build_pipeline(collection="chunks_section", qdrant_path="qdrant_storage",
+def build_pipeline(collection="chunks_titled", qdrant_path="qdrant_storage",
                    candidates_k=20, top_n=5):
     embedder = load_embedder()
     client = get_client(qdrant_path)

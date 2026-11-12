@@ -25,3 +25,17 @@
 - Larger max_chars for section chunks; chapter/section title in reranker input.
 - Prompt rules: list all options, take article numbers only from the source header.
 - Confidence threshold on the reranker score (relevant answers can score as low as 0.375).
+
+
+## Experiment: chunk header (document | chapter | label)
+
+Prefixing each section chunk with "document | chapter | label" before embedding
+(and before reranking) was evaluated on the easy (36 q) and hard paraphrased (35 q) sets.
+
+- Without reranker: easy Hit@1 0.889 -> 0.972, MRR 0.925 -> 0.986; hard Hit@5 0.971 -> 1.000, MRR 0.909 -> 0.920.
+- With reranker: no measurable difference (easy set already at ceiling, hard set unchanged).
+- Effect is small (1-3 questions) but never negative, so titled chunks are the default (collection chunks_titled).
+- q04 (hijab/dress code, hard set) still fails: the reranker prefers the penalties article (art. 7)
+  over the violations list (art. 6) because the question says "disciplinary action". Documented as a limitation.
+- The preface of the discipline regulation PDF is extracted reversed (RTL extraction issue); it only affects the preface and is not fixed.
+- Not tested (scope cut): other max_chars values, top_n variants.

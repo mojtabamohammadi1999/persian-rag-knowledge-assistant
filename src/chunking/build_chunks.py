@@ -45,3 +45,11 @@ def build_and_save_chunks(processed_dir="data/processed"):
             json.dump(chunks, f, ensure_ascii=False, indent=2)
         print(name, "←", len(chunks), "chunk")
     return outputs
+
+
+def add_header(chunk):
+    """Prefix chunk text with 'document | chapter | label' (small retrieval gain)."""
+    from src.generation.prompt import DOC_TITLES
+    parts = [DOC_TITLES.get(chunk["document"]), chunk.get("chapter"), chunk.get("label")]
+    header = " | ".join(p for p in parts if p)
+    return {**chunk, "text": header + "\n" + chunk["text"]}

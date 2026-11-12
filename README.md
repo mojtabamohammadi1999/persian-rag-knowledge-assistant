@@ -3,7 +3,7 @@
 Question answering over Iranian university regulations and the Constitution, in Persian.
 A local LLM answers **only** from retrieved passages and cites its sources.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mojtabamohammadi1999/production-rag-knowledge-assistant/blob/main/notebooks/demo_colab.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mojtabamohammadi1999/persian-rag-knowledge-assistant/blob/main/notebooks/demo_colab.ipynb)
 
 **Try it:** click the Colab badge, select a T4 GPU, and run the three cells. The first run takes about
 15 minutes (a ~15 GB model download). The last cell prints a public Gradio link and keeps running while the demo is alive;
@@ -80,8 +80,8 @@ More details and the experiment log: [`docs/findings.md`](docs/findings.md).
 Requires a CUDA GPU (a free Colab T4 is enough).
 
 ~~~bash
-git clone https://github.com/mojtabamohammadi1999/production-rag-knowledge-assistant.git
-cd production-rag-knowledge-assistant
+git clone https://github.com/mojtabamohammadi1999/persian-rag-knowledge-assistant.git
+cd persian-rag-knowledge-assistant
 pip install -r requirements.txt
 
 python scripts/build_index.py                 # raw documents -> chunks -> embeddings -> Qdrant

@@ -13,3 +13,9 @@ data/processed/*
 
 # Notebooks (kept out of the repo)
 *.ipynb
+
+# demo inputs and the demo notebook are committed
+!data/raw/discipline_regulation.pdf
+!data/raw/education_regulation.pdf
+!data/raw/constitution.html
+!notebooks/demo_colab.ipynb

@@ -61,3 +61,7 @@ independently verified against the full source text.
 Decision: no reranker-score threshold for abstention. The correct chunk of q04 had a
 reranker score of 0.05, so a threshold would reject valid questions. Abstention relies on the
 prompt rule, which handled all off-topic questions in this check (small sample).
+
+Where the generation errors came from (checked whether the evidence string was in the 5 passages given to the LLM):
+- q04: evidence NOT in the 5 passages -> retrieval/reranking failure.
+- q01, q11: evidence WAS in the passages -> the 7B model misused or only partly used them (generation failure).

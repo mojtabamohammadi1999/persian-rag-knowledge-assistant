@@ -19,3 +19,5 @@ data/processed/*
 !data/raw/education_regulation.pdf
 !data/raw/constitution.html
 !notebooks/demo_colab.ipynb
+
+.gradio/

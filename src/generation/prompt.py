@@ -45,3 +45,10 @@ def build_messages(question, chunks):
         {"role": "system", "content": SYSTEM_PROMPT},
         {"role": "user", "content": user_content},
     ]
+
+
+# Extra rules added after observing invented article numbers and truncated lists.
+SYSTEM_PROMPT = SYSTEM_PROMPT + """
+5. شماره‌ی ماده، بند و تبصره را فقط از سربرگ همان منبع بردار؛ هرگز شماره‌ی ماده یا بند از خودت نساز.
+6. اگر پاسخ شامل چند مورد (فهرست) است، همه‌ی موردهای موجود در منبع‌ها را بیاور و هیچ موردی را حذف نکن.
+"""

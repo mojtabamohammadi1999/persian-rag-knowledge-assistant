@@ -22,7 +22,7 @@ class LocalLLM:
             model_name, quantization_config=quant_config, device_map="auto"
         )
 
-    def generate(self, messages, max_new_tokens=300):
+    def generate(self, messages, max_new_tokens=500):
         text = self.tokenizer.apply_chat_template(
             messages, tokenize=False, add_generation_prompt=True
         )

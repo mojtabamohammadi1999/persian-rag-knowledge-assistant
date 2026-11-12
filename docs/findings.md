@@ -39,3 +39,25 @@ Prefixing each section chunk with "document | chapter | label" before embedding
   over the violations list (art. 6) because the question says "disciplinary action". Documented as a limitation.
 - The preface of the discipline regulation PDF is extracted reversed (RTL extraction issue); it only affects the preface and is not fixed.
 - Not tested (scope cut): other max_chars values, top_n variants.
+
+
+## Generation check (manual, 12 questions)
+
+8 hard-set questions + 1 cheating question + 3 questions that should be unanswerable,
+run through the full pipeline (titled chunks, rerank, top_n=5, Qwen2.5-7B 4-bit).
+Judged against the evidence snippets (and constitution text knowledge); q13 and q24 were not
+independently verified against the full source text.
+
+- Document questions (9): 4 correct, 2 partial (q11, q17), 3 wrong (q01, q04, x1).
+- Off-topic / unanswerable (3): all correctly answered with the "not enough information" sentence.
+- q04: false abstention. The correct chunk was rank 10 after reranking, so it never reached the prompt (retrieval failure).
+- q17: answer cut mid-sentence by max_new_tokens=300; default raised to 500.
+- q11: only one of the restrictions listed; prompt rule 6 ("list all items") did not fix it.
+- x1 (penalty for cheating): lists the mildest penalties of the list instead of the one for cheating.
+  The violation and its penalty live in different articles (multi-hop), a known limitation.
+- Citation format: sometimes one trailing [n] after a whole list instead of one per claim.
+- Latency: 3-30 s per answer (short answers 3-8 s), retrieval and rerank under 0.5 s.
+
+Decision: no reranker-score threshold for abstention. The correct chunk of q04 had a
+reranker score of 0.05, so a threshold would reject valid questions. Abstention relies on the
+prompt rule, which handled all off-topic questions in this check (small sample).
